@@ -2,9 +2,9 @@ import pandas as pd
 import streamlit as st 
 import pickle 
 
-load = pickle.load(open('model.pkl',"rb"))
+load = pickle.load(open('model.sav',"rb"))
 
-vectorize = pickle.load(open('vectorizer.pkl', "rb"))
+vectorize = pickle.load(open('vectorizer.sav', "rb"))
 
 def news_prediction(news):
   testing_news = {"text":[news]}
