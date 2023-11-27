@@ -23,8 +23,8 @@ import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
 # df2 = pd.read_csv("Fake.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067]) 
 # data = pd.concat([df1, df2], ignore_index=True, sort=False)
 
-model = pickle.load(open('model.pkl' ,"rb"))
-vectorizer = pickle.load(open('vectorizer.pkl', "rb")) 
+model = pickle.load(open('model.sav' ,"rb"))
+vectorizer = pickle.load(open('vectorizer.sav', "rb")) 
 
 
 def predict_news(input_text, vectorizer, model):
